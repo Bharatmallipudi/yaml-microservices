@@ -3,7 +3,7 @@ import * as mongoDB from "mongodb"
 export const collections:{users?: mongoDB.Collection}={}
 
 export async function connectToDatabase() {
-    const client:mongoDB.MongoClient=new mongoDB.MongoClient("mongodb+srv://bharat:bharat@cluster0.oldsrhe.mongodb.net/?retryWrites=true&w=majority")
+    const client:mongoDB.MongoClient=new mongoDB.MongoClient("mongodb+srv://bharat:******@cluster0.oldsrhe.mongodb.net/?retryWrites=true&w=majority")
 
     await client.connect()
 
